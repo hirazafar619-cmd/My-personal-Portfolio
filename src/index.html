@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hira Zafar Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <style>
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    .animate-bounce-slow {
+      animation: bounce-slow 2s infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 flex min-h-screen">
+
+ <!-- Mobile Navbar -->
+<nav class="md:hidden fixed top-0 left-0 w-full bg-gray-800 text-white flex justify-between items-center px-4 py-3 shadow-md z-50">
+  <h1 class="text-lg font-bold">Hira Zafar</h1>
+  <button id="menuBtn" class="text-2xl">
+    <i class="fas fa-bars"></i>
+  </button>
+</nav>
+
+<!-- Mobile Menu Dropdown -->
+<div id="mobileMenu"
+     class="md:hidden hidden fixed top-14 left-0 w-full bg-gray-900 text-white py-5 space-y-4 text-center z-50">
+  <a href="#home" class="block hover:text-amber-400">Home</a>
+  <a href="#about" class="block hover:text-amber-400">About</a>
+  <a href="#skills" class="block hover:text-amber-400">Skills</a>
+  <a href="#portfolio" class="block hover:text-amber-400">Portfolio</a>
+  <a href="#services" class="block hover:text-amber-400">Services</a>
+  <a href="#contact" class="block hover:text-amber-400">Contact</a>
+</div>
+
+
+
+ <!-- sidebar -->
+  <aside class="hidden md:flex w-40 sm:w-52 md:w-64 bg-gray-800 shadow-md fixed inset-y-0 left-0 flex-col items-center py-8">
+
+    <!-- Profile Image -->
+    <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg mb-4">
+      <img src="assets/images/office.jpeg" class="w-full h-full object-cover" alt="">
+    </div>
+
+    <!-- Name -->
+    <h1 class="text-white text-xl sm:text-2xl font-bold mb-4">Hira Zafar</h1>
+
+    <!--Icons -->
+    <div class="flex space-x-4 mb-8">
+      <a href="#" class="text-white text-xl hover:text-amber-400"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white text-xl hover:text-amber-400"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white text-xl hover:text-amber-400"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="text-white text-xl hover:text-amber-400"><i class="fab fa-github"></i></a>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="flex flex-col space-y-3 text-center">
+      <a href="#home" class="text-white hover:text-amber-400">Home</a>
+      <a href="#about" class="text-white hover:text-amber-400">About</a>
+      <a href="#skills" class="text-white hover:text-amber-400">Skills</a>
+      <a href="#portfolio" class="text-white hover:text-amber-400">Portfolio</a>
+      <a href="#services" class="text-white hover:text-amber-400">Services</a>
+      <a href="#contact" class="text-white hover:text-amber-400">Contact</a>
+    </nav>
+  </aside>
+
+<!-- Main content  -->
+  <div class="w-full mt-16 lg:mt-0  sm:ml-52 md:ml-64 p-5 sm:p-8 space-y-16">
+
+    <!-- HERO -->
+    <header id="home"
+            class="relative w-full h-screen bg-cover bg-center rounded-lg"
+            style="background-image: url('assets/images/567.jpeg');">
+
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4 text-center">
+        <h2 class="text-3xl sm:text-5xl font-extrabold mb-4" data-aos="fade-down">Hello, I'm Hira Zafar</h2>
+        <p class="text-base sm:text-lg md:text-xl max-w-xl mb-6" data-aos="fade-up" data-aos-delay="200">
+          A passionate web developer crafting modern websites.
+        </p>
+
+        <a href="assets/images/Hira Zafar--CV.pdf"
+           class="bg-white text-amber-700 font-semibold px-6 py-3 rounded-md hover:bg-gray-200 transition animate-bounce-slow"
+           data-aos="zoom-in" data-aos-delay="400">
+          Download CV
+        </a>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-700 leading-relaxed">
+        “I am Hira Zafar, a passionate web developer who loves turning ideas into beautiful, functional websites using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS. I focus on creating responsive layouts, smooth user experiences, and modern, visually engaging designs."
+      </p>
+    </section>
+
+    <!-- SKILLS  -->
+    <section id="skills" class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Skills</h2>
+
+      <div class="space-y-6">
+      
+        <div>
+          <h3 class="text-xl font-semibold">HTML</h3>
+          <div class="w-full bg-gray-300 rounded-full h-4">
+            <div class="bg-yellow-600 h-4 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold">CSS</h3>
+          <div class="w-full bg-gray-300 rounded-full h-4">
+            <div class="bg-yellow-600 h-4 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+          <div class="w-full bg-gray-300 rounded-full h-4">
+            <div class="bg-yellow-600 h-4 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold">JavaScript</h3>
+          <div class="w-full bg-gray-300 rounded-full h-4">
+            <div class="bg-yellow-600 h-4 rounded-full" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO   -->
+    <section id="portfolio" class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">Portfolio</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-lg p-4 shadow-md">
+          <img src="assets/images/landing page.jpg" class="rounded mb-4 w-full object-cover" />
+          <h3 class="font-semibold text-lg">Landing Page</h3>
+          <p class="text-gray-600 text-sm">Professional portfolio with a clean, modern user interface showcasing my skills, projects, and experience through visually appealing layouts and responsive design.</p>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-md">
+          <img src="assets/images/javascript project.png" class="rounded mb-4 w-full object-cover" />
+          <h3 class="font-semibold text-lg">JavaScript Projects</h3>
+          <p class="text-gray-600 text-sm">“Interactive JavaScript websites featuring dynamic functionality, smooth user interactions, and responsive behavior to enhance the overall user experience.”.</p>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-md">
+          <img src="assets/images/final year projects.webp" class="rounded mb-4 w-full object-cover" />
+          <h3 class="font-semibold text-lg">Final Year Projects</h3>
+          <p class="text-gray-600 text-sm">Showcasing modern UI/UX design and web development skills through visually refined, user-focused interfaces and well-structured, responsive layouts.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES-->
+    <section id="services" class="py-12">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold">My Services</h2>
+        <p class="text-gray-600 mt-3">I offer professional web design & development services.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:-translate-y-1 hover:shadow-2xl transition">
+          <div class="text-blue-600 text-5xl mb-4"><i class="fas fa-code"></i></div>
+          <h3 class="text-2xl font-semibold">Web Development</h3>
+          <p class="text-gray-600 mt-2">Responsive high-performance websites.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:-translate-y-1 hover:shadow-2xl transition">
+          <div class="text-green-600 text-5xl mb-4"><i class="fas fa-laptop-code"></i></div>
+          <h3 class="text-2xl font-semibold">UI / UX Design</h3>
+          <p class="text-gray-600 mt-2">Modern and user-friendly interfaces.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:-translate-y-1 hover:shadow-2xl transition">
+          <div class="text-purple-600 text-5xl mb-4"><i class="fas fa-mobile-alt"></i></div>
+          <h3 class="text-2xl font-semibold">Responsive Design</h3>
+          <p class="text-gray-600 mt-2">Perfect layouts on all devices.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-12">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl font-bold">Get in Touch</h2>
+        <p class="text-gray-600">Fill the form and I will contact you soon.</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-10">
+        <form class="space-y-6">
+
+          <div>
+            <label class="font-semibold text-gray-700">Name</label>
+            <input type="text" class="w-full px-5 py-4 border rounded-xl focus:ring-2 focus:ring-gray-600" placeholder="Your Name">
+          </div>
+
+          <div>
+            <label class="font-semibold text-gray-700">Email</label>
+            <input type="email" class="w-full px-5 py-4 border rounded-xl focus:ring-2 focus:ring-gray-600" placeholder="you@example.com">
+          </div>
+
+          <div>
+            <label class="font-semibold text-gray-700">Message</label>
+            <textarea rows="4" class="w-full px-5 py-4 border rounded-xl focus:ring-2 focus:ring-gray-600" placeholder="Your Message"></textarea>
+          </div>
+
+          <button type="submit"
+                  class="w-full bg-gray-700 text-white font-semibold py-4 rounded-xl hover:bg-gray-800">
+            Send Message
+          </button>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-6 mt-16">
+      <div class="flex justify-center space-x-6 mb-3">
+        <a href="#" class="text-white text-2xl hover:text-amber-400"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white text-2xl hover:text-amber-400"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white text-2xl hover:text-amber-400"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-white text-2xl hover:text-amber-400"><i class="fab fa-github"></i></a>
+      </div>
+      <p class="text-center text-gray-300 text-sm">
+        © 2025 <span class="font-semibold">Hira Zafar</span>. All rights reserved.
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+      easing: 'ease-out-cubic'
+    });
+  </script>
+
+</body>
+</html>
